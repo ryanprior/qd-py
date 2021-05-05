@@ -2,6 +2,13 @@
 
 A tiny Python simulator for ideal quantum computers.
 
+** How To Run
+
+For now:
+#+BEGIN_SRC bash
+python -m src.gates
+#+END_SRC
+
 ** Questions
 - How do we "split" or copy a qubit?
 
