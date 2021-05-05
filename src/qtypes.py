@@ -1,4 +1,4 @@
-from numpy import cdouble, array, dtype
+from numpy import cdouble, array, dtype, matmul
 from dataclasses import dataclass
 
 # example:
@@ -18,5 +18,5 @@ class Gate:
     transform: array
 
     def apply(self, k: Ket):
-        return self.transform * k
+        return matmul(self.transform, k)
 
