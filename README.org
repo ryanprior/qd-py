@@ -1,0 +1,40 @@
+#+TITLE: Quantum† Python
+
+A tiny Python simulator for ideal quantum computers.
+
+** Questions
+- How do we "split" or copy a qubit?
+
+** Examples
+
+*** Initial
+
+**** Minimum circuit: quantum coin flip
+Initiate a qubit, apply Hadamard gate, measure.
+
+*** Aspirational
+(because I haven't the foggiest idea how to accomplish this yet)
+
+**** Quantum Rock-Paper-Scissors
+
+Two third-parties send us a single qubit, which encodes a sign (rock, paper, scissors.) The quantum circuit informs us which sign each party threw, and who wins, according to the classic rules.
+
+Or, a variant: the circuit only shows who wins, without revealing which signs were thrown. Does this variant lend itself to a more elegant expression or simpler circuit? Does this concept bear any resemblance to quantum key negotiation?
+
+** Big Picture
+
+What is the "hello world!" of quantum computing? How do we represent human-level knowledge in a quantum system?
+
+*** Begging further questions:
+
+- can a quantum system drive a six-segment display?
+- or what does a human-level readout look like?
+- do we only care about "measurements" in the final sense, or do we consider outputs that come from intermediate states?
+
+  If the answer is that we only care about measurements, then we have to collapse at some point into classical bits in order to give a readout.
+
+  If we are willing to consider quantum-informational outputs that couldn't actually be measured but might nonetheless be interesting to the learner, then we might conceive of some kind of intermediate user output display.
+
+  For example, suppose we were to split up the state space into 26 segments, each representing a letter. Then we can select a letter by rotating the |0> (zero ket) by 1/26 radians for each letter of the alphabet.
+
+  In addition, can we map from one to the other? Once we've conceived of some kind of perhaps-fictitious encoding system that relies on unrealistic level of information about the exact state of a qubit, under what circumstances can we build a quantum circuit that encodes that output in an actually measurable way?
